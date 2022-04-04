@@ -1,7 +1,7 @@
 import XCTest
 import StronglyTypedId
 
-final class ClassIdentifierTests: XCTestCase {
+final class IdentifierTests: XCTestCase {
 
     func test_dog() {
         func take(dog id: Dog.Id) {  }

@@ -2,7 +2,7 @@ import Foundation
 import StronglyTypedId
 
 struct Cat {
-    final class Id: ClassIdentifier {}
+    final class Id: Identifier {}
 
     let id: Id
     let name: String
