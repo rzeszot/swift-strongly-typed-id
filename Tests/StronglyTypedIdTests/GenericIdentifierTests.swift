@@ -3,18 +3,18 @@ import StronglyTypedId
 
 final class GenericIdentifierTests: XCTestCase {
 
-    func test_animal() {
-        func take(animal id: Animal.Id) {  }
+    func test_bee() {
+        func take(bee id: Bee.Id) {  }
 
-        take(animal: Animal.foo.id)
-//        take(animal: Person.bar.id)
+        take(bee: Bee.foo.id)
+//        take(bee: Wasp.foo.id)
     }
 
-    func test_person() {
-        func take(person id: Person.Id) {  }
+    func test_wasp() {
+        func take(wasp id: Wasp.Id) {  }
 
-        take(person: Person.bar.id)
-//        take(person: Animal.foo.id)
+        take(wasp: Wasp.foo.id)
+//        take(wasp: Bee.foo.id)
     }
 
 }
