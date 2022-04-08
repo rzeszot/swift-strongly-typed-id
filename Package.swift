@@ -3,12 +3,12 @@
 import PackageDescription
 
 let package = Package(
-  name: "StronglyTypedId",
+  name: "Identifier",
   products: [
-    .library(name: "StronglyTypedId", targets: ["StronglyTypedId"])
+    .library(name: "Identifier", targets: ["Identifier"])
   ],
   targets: [
-    .target(name: "StronglyTypedId"),
-    .testTarget(name: "StronglyTypedIdTests", dependencies: ["StronglyTypedId"])
+    .target(name: "Identifier"),
+    .testTarget(name: "IdentifierTests", dependencies: ["Identifier"])
   ]
 )
