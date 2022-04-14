@@ -53,6 +53,19 @@ final class IdentifierTests: XCTestCase {
         XCTAssertNotEqual(a, c)
     }
 
+    // MARK: - Hashable
+
+    func test_Hashable() {
+        let sut = Cat.ID("123")
+        XCTAssertEqual(hash(of: sut), hash(of: "123"))
+    }
+
+    private func hash<T: Hashable>(of object: T) -> Int {
+        var hasher = Hasher()
+        object.hash(into: &hasher)
+        return hasher.finalize()
+    }
+
     // MARK: -
 
     func test_StringLiteral() {
