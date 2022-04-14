@@ -7,3 +7,9 @@ public struct Identifier<Distriminator, RawValue> {
         self.value = value
     }
 }
+
+extension Identifier {
+    public init<T>(_ other: Identifier<T, RawValue>) {
+        self.init(other.value)
+    }
+}

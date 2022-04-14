@@ -78,4 +78,11 @@ final class IdentifierTests: XCTestCase {
         XCTAssertEqual(Int(sut), Int(123))
     }
 
+    // MARK: -
+
+    func test_ExplicitConvertion() {
+        let sut = Cat.ID(Tiger.ID("123"))
+        XCTAssertEqual(String(sut), "123")
+    }
+
 }
